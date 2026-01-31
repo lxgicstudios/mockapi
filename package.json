@@ -1,0 +1,40 @@
+{
+  "name": "@lxgicstudios/mockapi",
+  "version": "1.0.0",
+  "description": "Spin up a mock REST API server from JSON files in seconds",
+  "main": "dist/index.js",
+  "bin": {
+    "mockapi": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mock",
+    "api",
+    "rest",
+    "server",
+    "json-server",
+    "fake-api",
+    "frontend",
+    "development",
+    "cli",
+    "npx"
+  ],
+  "author": "LXGIC Studios <lxgicstudios@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lxgicstudios/mockapi"
+  },
+  "homepage": "https://github.com/lxgicstudios/mockapi#readme",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": ["dist"],
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "@types/node": "^20.0.0"
+  }
+}
