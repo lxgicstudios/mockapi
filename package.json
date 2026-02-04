@@ -1,7 +1,7 @@
 {
   "name": "@lxgicstudios/mockapi",
-  "version": "1.0.0",
-  "description": "Spin up a mock REST API server from JSON files in seconds",
+  "version": "1.0.1",
+  "description": "Spin up a mock REST API server from JSON files in seconds. Zero-config CLI tool.",
   "main": "dist/index.js",
   "bin": {
     "mockapi": "./dist/cli.js"
@@ -11,28 +11,46 @@
     "prepublishOnly": "npm run build"
   },
   "keywords": [
-    "mock",
     "api",
-    "rest",
-    "server",
-    "json-server",
+    "backend",
+    "cli",
+    "developer-tools",
+    "development",
     "fake-api",
     "frontend",
-    "development",
-    "cli",
-    "npx"
+    "http",
+    "json-server",
+    "mock",
+    "mocking",
+    "nodejs",
+    "npx",
+    "prototyping",
+    "rest",
+    "server",
+    "testing",
+    "zero-config"
   ],
-  "author": "LXGIC Studios <lxgicstudios@gmail.com>",
+  "author": "LXGIC Studios <hello@lxgicstudios.com> (https://lxgicstudios.com)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lxgicstudios/mockapi"
+    "url": "git+https://github.com/lxgicstudios/mockapi.git"
   },
   "homepage": "https://github.com/lxgicstudios/mockapi#readme",
+  "bugs": {
+    "url": "https://github.com/lxgicstudios/mockapi/issues"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/lxgicstudios"
+  },
   "engines": {
     "node": ">=16.0.0"
   },
-  "files": ["dist"],
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": ["dist", "README.md"],
   "devDependencies": {
     "typescript": "^5.3.0",
     "@types/node": "^20.0.0"
